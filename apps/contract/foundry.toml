@@ -2,6 +2,7 @@
 src = "src"
 out = "out"
 libs = ["lib", "dependencies"]
+solc_version = "0.8.30"
 
 [soldeer]
 # whether soldeer manages remappings
@@ -21,12 +22,8 @@ remappings_prefix = ""
 remappings_location = "txt"
 
 [rpc_endpoints]
-anvil = "${ANVIL_URL}"
 monadTestnet = "https://testnet-rpc.monad.xyz"
  
-[etherscan]
-anvil = { key = "${ANVIL_KEY}" }
-
 [dependencies]
 forge-std = "1.9.7"
 "@openzeppelin-contracts" = "5.3.0"
