@@ -54,4 +54,7 @@ contract PemilihanBEM {
     }
 
     // TODO: Implementasikan get results function
+    function getResults(uint256 kandidatIndex) public view returns (uint256) {
+        return kandidat[kandidatIndex].suara;
+    }
 }
